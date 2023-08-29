@@ -1,0 +1,164 @@
+:root {
+    font-family:"Kumbh Sans", 'Times New Roman';
+    font-size:18px;
+}
+
+* {
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+}
+
+body {
+    width:1440px;
+    height:100vh;
+    background-color: hsl(185, 75%, 39%);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+}
+
+/* -------- P R O F I L E   C A R D ----------  */
+ /* -------- S T A R T S     H E R E ----------*/
+
+.card {
+    width:320px;
+    height:373px;
+    /* aspect-ratio: 6/7; */
+    border-radius:1em;
+    background-color:white;
+    /* position:absolute; */
+}
+
+.card-top{
+    /* position:RELATIVE; */
+    background-image:url(./bg-pattern-card.svg);
+    height:37%;
+    border-radius:1em 1em 0 0;
+    margin-bottom:0;
+}
+
+.thumbnail {
+    display:block;
+    transform:translatey(-50%);
+    border-radius:50%;
+    border:5px solid white;
+    margin:0 auto;
+}
+
+/* ------ T E X T    I N F O -------- */
+/* ---- S T A R T S    H E R E  ------ */
+
+/* .card *{border:1px solid blue;} */
+
+.name, .age {
+    display:inline-block;
+    margin-right:0.5em;
+}
+
+.age {color:hsl(227,10%,46%);}
+
+.name-and-age {
+    display: block;
+    text-align:center;
+    /* position: relative; */
+    margin-top:-10%;
+    margin-bottom:2%;
+}
+
+.city {
+    text-align:center;
+    font-weight:400;
+    color:hsl(227,10%,46%);
+    margin-bottom:20px;
+}
+
+hr {
+    background-color:hsl(0, 0%, 91%);
+    HEIGHT:1PX;
+    border:none;}
+
+/* ------ B O T T O M    C O U N T E R S -------- */
+/* ----------- S T A R T    H E R E  --------- */
+
+.counters {
+    display:flex;
+    flex-wrap:nowrap;
+    justify-content:space-evenly;
+    align-items:center;
+    width:300px;
+    height:50px;
+    margin:20px  auto;
+}
+
+.count {
+text-align:center;
+}
+
+.count h4{
+margin-bottom:4px;
+}
+
+.count p{
+    font-size:0.55em;
+    letter-spacing:1px;
+    color:hsl(227,10%,46%)
+}
+
+/* ----------B A C K G R O U N D      I M A G E S----------- */
+/* ----------B A C K G R O U N D      I M A G E S----------- */
+
+.back-img {
+    position:absolute;
+    z-index:-1;
+}
+
+img.top {
+    top:-545px;
+    left: -270px;
+}
+
+img.bottom {
+    bottom:-640px;
+    right: -244px;
+}
+
+html{
+    max-width:1440px;
+    position:relative;
+    overflow:hidden
+}
+
+/* -------- M O B I L E    S C R E E N S -------- */
+/* -------- M O B I L E    S C R E E N S -------- */
+
+@media (max-width:375px) {
+
+    body {
+        width:375px;
+        height:100vh;
+        background-color: hsl(185, 75%, 39%);
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        position:relative;
+    }
+
+    html{
+        width:375px;
+        overflow:hidden;
+    }
+
+    img.top {
+        top:-500px;
+        left: -600px;
+        transform:scale(0.6);
+    }
+    
+    img.bottom {
+        bottom: -490px;
+        left: -19px;
+        transform:scale(0.6)
+    }
+}
